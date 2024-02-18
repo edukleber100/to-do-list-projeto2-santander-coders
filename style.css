@@ -1,0 +1,101 @@
+:root{
+    --color-darkblue: #06081F;
+    --color-blue: #090f4d;
+    --color-white: #fff;
+    --color-blue2: #090c2e;
+    --color-green2: #2FF022;
+    --color-green: #1dac13;
+}
+
+body{
+    font-family: 'Gruppo';
+    background-color: var(--color-darkblue);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content-add-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input,
+#btn{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    transition: 0.2s;
+}
+
+#btn:hover{
+    background-color: var(--color-blue2);
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#list li:hover{
+    background-color: var(--color-blue2);
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#btn-concluido{
+    border: none;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-concluido:hover{
+    background-color: var(--color-green2);
+}
